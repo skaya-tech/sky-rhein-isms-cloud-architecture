@@ -1,0 +1,13 @@
+{
+  "schemaName": "SmartLockoutPolicy",
+  "version": "1.0",
+  "organization": "SKY-Rhein Logistik GmbH",
+  "settings": {
+    "lockoutThreshold": 5,
+    "lockoutDurationInSeconds": 90,
+    "unlockedOnFailure": false
+  },
+  "complianceReference": {
+    "iso27001:2022": "Control 5.18 (Access rights) & Control 8.5 (Secure authentication)"
+  }
+}
