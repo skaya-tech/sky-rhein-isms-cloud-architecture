@@ -1,0 +1,22 @@
+{
+  "displayName": "CA03-RequireCompliantDevice",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": ["All"],
+      "excludeUsers": ["BreakGlassAdmins"]
+    },
+    "applications": {
+      "includeApplications": ["All"]
+    },
+    "clientAppTypes": ["all"]
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": ["compliantDevice"]
+  },
+  "sessionControls": {},
+  "complianceReference": {
+    "iso27001:2022": "Control 8.1 (User endpoint devices) & Control 5.15 (Access control)"
+  }
+}
