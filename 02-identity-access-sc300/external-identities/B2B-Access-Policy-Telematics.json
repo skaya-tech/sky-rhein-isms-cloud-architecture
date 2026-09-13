@@ -1,0 +1,27 @@
+{
+  "displayName": "B2B-Access-Policy-Telematics",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": ["GuestsOrExternalUsers"],
+      "excludeUsers": []
+    },
+    "applications": {
+      "includeApplications": ["All"]
+    },
+    "clientAppTypes": ["all"]
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": ["mfa", "compliantDevice"]
+  },
+  "sessionControls": {
+    "signInFrequency": {
+      "value": 12,
+      "type": "hours"
+    }
+  },
+  "complianceReference": {
+    "iso27001:2022": "Control 5.18 (Access to information assets by third parties) & Control 5.15 (Access control)"
+  }
+}
