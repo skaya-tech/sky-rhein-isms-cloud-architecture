@@ -1,0 +1,22 @@
+{
+  "displayName": "CA01-RequireMFA-AllUsers",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": ["All"],
+      "excludeUsers": ["Sponsors", "GuestsOrExternalUsers"]
+    },
+    "applications": {
+      "includeApplications": ["All"]
+    },
+    "clientAppTypes": ["all"]
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": ["mfa"]
+  },
+  "sessionControls": {},
+  "complianceReference": {
+    "iso27001:2022": "Control 5.15 (Access Control) & Control 8.5 (Secure Authentication)"
+  }
+}
